@@ -1,71 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>NeighborCall</title>
-    <link type="text/css" rel="stylesheet" href="./css/materialize/css/materialize.min.css"  media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-  <body class="container">
-    <img class="responsive-img" src="./images/nc-logo.jpg"/>
-    <h4>Stay connected with your community and support your neighborhood through COVID-19.</h4>
-    <br>
-    <form> 
-      <div class="input-field col s6">
-        <i class="material-icons prefix">account_circle</i>
-        <input id="name" type="text" class="validate">
-        <label for="name">My name is</label>
-      </div>
+	<head>
+		<meta charset="UTF-8">
+		<title>NeighborCall</title>
+		<link type="text/css" rel="stylesheet" href="./css/materialize/css/materialize.min.css" media="screen,projection" />
+		<link type="text/css" rel="stylesheet" href="./css/styles.css" media="screen,projection" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="container">
+		<img class="responsive-img" src="./images/nc-logo.jpg"/>
+		<h4>Stay connected with your community and support your neighborhood through COVID-19.</h4>
+		<form> 
+			<div class="input-field col s6">
+				<i class="material-icons prefix">account_circle</i>
+				<input id="name" type="text" class="validate">
+				<label for="name">My name is</label>
+			</div>
 
-      <div class="row">
-        <div class="input-field col s3">
-          <i class="material-icons prefix">home</i>
-          <input id="home" type="text" class="validate">
-          <label for="home">I live at </label>
-        </div>
+			<div id="divAddressInputs" class="row">
+			<!--<div class="input-field col s3">
+				<i class="material-icons prefix">home</i>
+				<input id="home" type="text" class="validate">
+				<label for="home">I live at </label>
+			</div>-->
 
-        <div class="input-field col s3">
-          <i class="material-icons prefix">home</i>
-          <input id="suburb" type="text" class="validate">
-          <label for="suburb">My suburb is </label>
-        </div>
+			<div class="input-field col s4">
+				<i class="material-icons prefix">home</i>
+				<input id="suburb" type="text" class="validate">
+				<label for="suburb">My suburb is </label>
+			</div>
 
-        <div class="input-field col s3">
-          <i class="material-icons prefix">home</i>
-          <input id="state" type="text" class="validate">
-          <label for="state">My state/region is </label>
-        </div>
+			<div class="input-field col s4">
+				<i class="material-icons prefix">home</i>
+				<input id="state" type="text" class="validate">
+				<label for="state">My state/region is </label>
+			</div>
 
-        <div class="input-field col s3">
-          <i class="material-icons prefix">home</i>
-          <input id="country" type="text" class="validate">
-          <label for="country">My country is </label>
-        </div>
+			<div class="input-field col s4">
+				<i class="material-icons prefix">home</i>
+				<input id="country" type="text" class="validate">
+				<label for="country">My country is </label>
+			</div>
 
-      </div>
+			</div>
 
-      </div>
-      <div class="input-field col s6">
-        <i class="material-icons prefix">phone</i>
-        <input id="telephone" type="tel" class="validate">
-        <label for="telephone">Contact me on</label>
-      </div>
+			<div class="input-field col s6">
+			<i class="material-icons prefix">phone</i>
+			<input id="telephone" type="tel" class="validate">
+			<label for="telephone">Contact me on</label>
+			</div>
     
-      <div class="input-field col s6">
-        <i class="material-icons prefix">schedule</i>
-        <input id="time" type="time" class="validate">
-        <label for="time">Contact me around</label>
-      </div>
+			<div id="divTimeInput" class="input-field col s6">
+			<i class="material-icons prefix">schedule</i>
+			<input id="time" type="time" class="validate">
+			<label for="time">Contact me around</label>
+			</div>
 
-        <div class="input-field col s3">
-          <input class="waves-effect waves-light btn-large" type="submit" value="Sign me up"/>
-        </div>
-    </form>
+			<div class="input-field col s3">
+				<input class="waves-effect waves-light btn-large" type="submit" value="Sign me up"/>
+			</div>
+		</form>
 
-    <br>
-    <br>
+		<br>
+		<br>
 
-    <script type="text/javascript" src="./css/materialize/js/materialize.min.js"></script>
-  </body>
+		<script type="text/javascript" src="./css/materialize/js/materialize.min.js"></script>
+	</body>
 </html>
