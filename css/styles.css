@@ -1,11 +1,13 @@
 /* Custom Styling for NeighbourCall */
 
-form {
+.margin-top {
 	margin-top: 20px;
 }
 
 #logo {
 	max-width: 75%;
+	display: block;
+	margin: auto;
 }
 
 #divAddressInputs div {

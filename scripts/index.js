@@ -36,7 +36,7 @@ window.onload = function () {
 			<h5 class="teal-text bold-title">Sign Up</h5>
 		 </div>
 		<div class="divider"></div>
-		<form>
+		<form class="margin-top">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">account_circle</i>
 				<input id="name" type="text" class="validate" required>
@@ -124,7 +124,7 @@ window.onload = function () {
 			<h5 class="teal-text bold-title">Log In</h5>
 		 </div>
 		<div class="divider"></div>
-		<form>
+		<form class="margin-top">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">phone</i>
 				<input id="telephone" type="tel" class="validate" required>
@@ -156,7 +156,7 @@ window.onload = function () {
 		var div = document.getElementById("content");
 
 		var loadHtml = `		
-			<div class="content-middle row">
+			<div class="content-middle row margin-top">
 				<div class="col s12">
 					<div class="preloader-wrapper big active">
 						<div class="spinner-layer spinner-blue">
@@ -213,7 +213,33 @@ window.onload = function () {
 		var html = `<div class="section">
 			<h5 class="teal-text bold-title">Home</h5>
 		</div>
-		<div class="divider"></div>`;
+		<div class="divider"></div>
+		 <div class="row">
+			<div class="col s12 m6">
+				<div class="card yellow darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Connections Made:</span>
+						<h4>1</h4>
+					</div>
+					<div class="card-action">
+						<a class="black-text" href="#">Connect with more neighbours?</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card green darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Check Ins Completed:</span>
+						<h4>10</h4>
+					</div>
+					<div class="card-action">
+						<a class="black-text" href="#">Check in with friends?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+		`;
 		var div = document.getElementById("content");
 
 		div.innerHTML = html;
