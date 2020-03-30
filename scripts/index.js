@@ -26,14 +26,14 @@ window.onload = function () {
 		}
 
 		if (logInButton) {
-			logInButton.addEventListener("click", renderHomePage);
+			logInButton.addEventListener("click", renderLoadingSpinner);
 		}
 	}
 
 	function renderSignUpPage() {
 		var html = `
 		<div class="section">
-			<h5>Sign Up</h5>
+			<h5 class="teal-text bold-title">Sign Up</h5>
 		 </div>
 		<div class="divider"></div>
 		<form>
@@ -100,12 +100,12 @@ window.onload = function () {
 	function successfulRegistration() {
 		var html = `
 		<div class="section">
-			<h5>Registration Complete</h5>
+			<h5 class="teal-text bold-title">Registration Complete</h5>
 		 </div>
 		<div class="divider"></div>
 		<div class="row content-middle">
 			<div class="col s12">
-				<h2 class="success-title teal-text">Thank you!</h2>
+				<h2 class="bold-title teal-text">Thank you!</h2>
 				<i class="material-icons large success-icon">check_circle</i>
 				<p>You have successfully registered with NeighbourCall, please <a id="btnLogInNav" class="teal-text">log in</a></p>
 			</div>
@@ -121,7 +121,7 @@ window.onload = function () {
 	function renderLogInPage() {
 		var html = `
 		<div class="section">
-			<h5>Log In</h5>
+			<h5 class="teal-text bold-title">Log In</h5>
 		 </div>
 		<div class="divider"></div>
 		<form>
@@ -152,11 +152,72 @@ window.onload = function () {
 		registerEventHandlers();
 	}
 
+	function renderLoadingSpinner() {
+		var div = document.getElementById("content");
+
+		var loadHtml = `		
+			<div class="content-middle row">
+				<div class="col s12">
+					<div class="preloader-wrapper big active">
+						<div class="spinner-layer spinner-blue">
+						<div class="circle-clipper left">
+							<div class="circle"></div>
+						</div><div class="gap-patch">
+							<div class="circle"></div>
+						</div><div class="circle-clipper right">
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="spinner-layer spinner-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div><div class="gap-patch">
+						<div class="circle"></div>
+					</div><div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+					</div>
+
+					<div class="spinner-layer spinner-yellow">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div><div class="gap-patch">
+						<div class="circle"></div>
+					</div><div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+					</div>
+
+					<div class="spinner-layer spinner-green">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div><div class="gap-patch">
+						<div class="circle"></div>
+					</div><div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>`;
+
+		div.innerHTML = loadHtml;
+
+
+		setTimeout(renderHomePage, 4500);
+
+	}
+
 	function renderHomePage() {
 		var html = `<div class="section">
-			<h5>Registration Complete</h5>
+			<h5 class="teal-text bold-title">Home</h5>
 		</div>
 		<div class="divider"></div>`;
+		var div = document.getElementById("content");
+
+		div.innerHTML = html;
+		registerEventHandlers();
 	}
 
 };
