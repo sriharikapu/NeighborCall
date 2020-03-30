@@ -1,5 +1,13 @@
 /* Custom Styling for NeighbourCall */
 
+form {
+	margin-top: 20px;
+}
+
+#logo {
+	max-width: 75%;
+}
+
 #divAddressInputs div {
 	padding-left: 0;
 	padding-right: 0;
@@ -36,8 +44,12 @@ h4 {
 /* Mobile Styling */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	h4 {
-		font-size: 1.7rem;
+	#logo {
+		max-width: 100%;
+	}
+
+	h5 {
+		font-size: 1.4rem;
 	}
 
 	.input-field {
