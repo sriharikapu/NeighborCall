@@ -17,15 +17,14 @@ h4 {
 	margin-bottom: 20px;
 }
 
+.no-margin {
+	margin: 0;
+}
+
 /* Mobile Styling */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	#divAddressInputs div {
-		display: block;
-		width: 100%;
-	}
-
 	h4 {
 		font-size: 1.7rem;
 	}
