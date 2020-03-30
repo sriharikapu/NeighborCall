@@ -155,7 +155,7 @@ window.onload = function () {
 	function renderLoadingSpinner() {
 		var div = document.getElementById("content");
 
-		var loadHtml = `		
+		var loadHtml = `
 			<div class="content-middle row margin-top">
 				<div class="col s12">
 					<div class="preloader-wrapper big active">
@@ -204,7 +204,6 @@ window.onload = function () {
 
 		div.innerHTML = loadHtml;
 
-
 		setTimeout(renderHomePage, 4500);
 
 	}
@@ -222,7 +221,7 @@ window.onload = function () {
 						<h4>1</h4>
 					</div>
 					<div class="card-action">
-						<a class="black-text" href="#">Connect with more neighbours?</a>
+						<a class="black-text" href="#">Connect with neighbours?</a>
 					</div>
 				</div>
 			</div>
